@@ -1,12 +1,45 @@
-import mongoose from 'mongoose';
-import { DB_NAME } from './constants';
-import express from "express"
-const app = express()
+// require('dotenv').config({path: './env'}) breaks consistency of code
+
+
+import dotenv from "dotenv"
+import connectDB from "./db/db.js"
+
+
+dotenv.config({
+    path: './env'
+})
+
+connectDB()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // IIFE :- Phle semicolon isliye lgaya h bcoz achi practice h . isliye kyunki kai baar apka editor lgana bhul jata h last line pr to is problem ko thik krne k liye we use it.
 
 // First approach to connect DB but isse hmne index file ko kafu polute kr diya h .
  
+/*
 ;(async () =>{
     try {
         await mongoose.connect(`${process.env.MONGO_URI} / ${DB_NAME}`)
@@ -23,4 +56,8 @@ const app = express()
         console.log("ERROR: ", error);
     }
 })() 
+
+*/
+
+
 
