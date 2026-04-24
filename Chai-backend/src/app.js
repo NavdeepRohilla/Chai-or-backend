@@ -20,6 +20,7 @@ app.use(cookieParser())
 
 import userRouter from './routes/user.routes.js'
 
+// https://localhost:5000/api/v1/users/register -> yaha se testing kr skte..
 
 
 
